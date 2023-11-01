@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        body{
+            padding: 50px 100px;
+            background-color:skyblue;
+        }
+        h1{
+            text-align:center;
+        }
+        #container{
+            text-align: center;
+            background-color:rgb(112, 61, 61);
+            padding:60px;
+        }
+        .input-div{
+            display:inline-block;
+        }
+        .Inp{
+            padding: 5px 10px;
+            margin:10px;
+            font-size:30px;
+            font-weight:bold;
+            width:250px;
+            text-align:orange;
+        }
+        label{
+            font-size: 22px;
+            color:orange; 
+        }
+        .mid{
+            
+            width:20%;
+            position:absolute;           
+            }
+        
+        </style> -->
+</head>
+<body>
+   
+    <h1>Temperature Convertor</h1>
+    
+        <img class="mid"src="bg.png">
+
+    <div id="container">
+        <div class="input-div">
+            <label>Celsius</label><br>
+         <input type="number" value="0" id="celsius" class="Inp">
+        </div>
+        <div class="input-div">
+            <label>Fahrenheit</label><br>
+            <input type="number" value ="32" id="fahrenheit" class="Inp">
+        </div>
+    </div>
+    <!-- <script>
+        var celsius= document.getElementById("celsius");
+        var fahrenheit= document.getElementById("fahrenheit");
+
+        celsius.addEventListener('input',function(){
+            let cels=this.value;
+            let fehr=(cels*9/5)+32;
+            if(!Number.isInteger(fehr)){
+             fehr=fehr.toFixed(5);
+            }
+            fahrenheit.value=fehr;
+        });
+
+        fahrenheit.addEventListener('input',function(){
+            let fehr=this.value;
+            let cels=(fehr-32)*5/9;
+            if(!Number.isInteger(cels)){
+             cels=cels.toFixed(5);
+            }
+            celsius.value=cels;
+        });
+    </script> -->
+    <script src="script.js"></script>
+</body>
+</html>
